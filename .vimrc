@@ -12,16 +12,13 @@ set grepprg=grep\ -nH\ $*
 set ic
 set smartcase
 
-
 set nocompatible
 syntax enable
 filetype plugin on
 filetype indent on
 let g:Tex_ViewRule_pdf = 'Preview'
 
-let vimrplugin_screenplugin = 0
-
+"let vimrplugin_screenplugin = 0
 
 let Tlist_Use_Right_Window=1
 nnoremap <silent> <F8> :Tlist<CR>
-
