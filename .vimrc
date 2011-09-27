@@ -25,8 +25,9 @@ let Tlist_Use_Right_Window=1
 nnoremap <silent> <F8> :Tlist<CR>
 
 "omicppcomplete options
-map <C-x><C-x><C-T> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q ~/.vim/commontags /usr/include /usr/local/include <CR><CR>
+map <C-x><C-x><C-T> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/commontags /usr/include /usr/local/include <CR><CR>
 set tags+=~/.vim/commontags
+set tags+=~/Dropbox/CMU/research/graphlabapi/src/tags
 
 "-- OmniCppComplete ---
 "-- required --
@@ -66,3 +67,7 @@ function! CompleteTab()
 endfunction
 
 inoremap <tab> <c-r>=CompleteTab()<cr>
+
+"-- OmniCppComplete Options --
+highlight Pmenu ctermbg=green gui=bold
+highlight Pmenu ctermfg=black gui=bold
