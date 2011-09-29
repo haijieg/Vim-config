@@ -25,9 +25,10 @@ let Tlist_Use_Right_Window=1
 nnoremap <silent> <F8> :Tlist<CR>
 
 "omicppcomplete options
-map <C-x><C-x><C-T> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/commontags /usr/include /usr/local/include <CR><CR>
+map <C-x><C-x><C-T> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/commontags /usr/include /usr/local/include <CR><CR>
 set tags+=~/.vim/commontags
-set tags+=~/Dropbox/CMU/research/graphlabapi/src/tags
+set tags+=~/graphlabapi/src/tags
+set tags+=~/.vim/tags/cpp
 
 "-- OmniCppComplete ---
 "-- required --
@@ -46,13 +47,16 @@ let OmniCpp_MayCompleteArrow = 1 " autocompelte with -->
 let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
 let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
 let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 let OmniCpp_ShowPrototypeInAbbr = 1 " show function prototype in popup window
 let OmniCpp_LocalSearchDecl = 1 " don't require special style of function opening braces
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
 
 
 " -- catgs --
 " Map <C-x><C-t> to generate ctags for current folder:
-map <C-x><C-t> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
+map <C-x><C-t> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 " add current directory's generated tags file to availabe tags
 set tags+=./tags
 
