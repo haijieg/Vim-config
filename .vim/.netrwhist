@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/haijieg/.vim'
 let g:netrw_dirhist_2='/Users/haijieg/.matplotlib'
 let g:netrw_dirhist_3='/Users/haijieg/.vim'
+let g:netrw_dirhist_4='/Users/haijieg/graphlabapi/demoapps/image_denoise'
+let g:netrw_dirhist_5='/Users/haijieg/.vim'
