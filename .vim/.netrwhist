@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/haijieg/tweets'
-let g:netrw_dirhist_2='/Users/haijieg/Dropbox/CMU/studynotes/programming/notes_on_qsub'
-let g:netrw_dirhist_3='/Users/haijieg/mylibs/spark-0.6.0'
-let g:netrw_dirhist_4='/Users/haijieg/tweets/test_graph/pagerank/edges'
-let g:netrw_dirhist_5='/Users/haijieg/Dropbox/CMU/course/fall12/optimization/hw5/writeup'
-let g:netrw_dirhist_6='/Users/haijieg/Dropbox/CMU/research'
-let g:netrw_dirhist_7='/Users/haijieg/Downloads/ClickPrediction'
-let g:netrw_dirhist_8='/Users/haijieg/graphlab/graphlabapi/deps/event/src/libevent-build'
-let g:netrw_dirhist_9='/Users/haijieg/google_graph/toy'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/haijieg/graphlab/graphlab3/src/graphlab/database/server'
+let g:netrw_dirhist_2='/Users/haijieg/.vim'
